@@ -49,11 +49,35 @@ public class NestedLoops {
             
         }
 
-        // 5-րդ առաջադրանքը չեմ գտնում ճիշտ ձևը բացատները դնելու, չեմ կարողանում պատկերը ստանալ
+        // 5-րդ առաջադրանք
 
+        for (int i = 0; i < 5 ; i++) {
+            
+            for (int j = 5; j > i; j--) {
+                System.out.print(" ");
+                
+            }
+        for (int j = 0; j <= i ; j++) {
+            System.out.print(" *");
+            
+        }
 
+        System.out.println();
+
+        }
+
+        for (int i = 5; i > 0 ; i--) {
+
+            for (int j = 0; j < 5 - i; j++) {
+                System.out.print(" ");
 
             }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" *");
+
+            }
+            System.out.println();
+
 
         }
 
