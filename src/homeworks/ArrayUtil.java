@@ -79,7 +79,7 @@ public class ArrayUtil {
 
         for (int i = 0; i < numbers.length; i++) {
 
-            if(numbers[i] % 2 ==1) {
+            if(numbers[i] % 2 != 0) {
                 resultOdd++;
             }
         }
@@ -134,21 +134,6 @@ public class ArrayUtil {
 
             
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
