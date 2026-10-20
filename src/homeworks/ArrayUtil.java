@@ -8,7 +8,7 @@ public class ArrayUtil {
 
         //Խնդիր 1 — Տպել զանգվածի բոլոր էլեմենտները
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < numbers.length; i++) {
 
             System.out.print(numbers[i] + " ");
         }
