@@ -7,7 +7,7 @@ public class ArrayHomework {
 
         //Խնդիր 1 — Հաշվել տվյալ թվի հանդիպումների քանակը
 
-        int[] numbers =  {6, 3, 8, 6, 1, 9, 6, 4, 2, 6};
+        int[] numbers = {6, 3, 8, 6, 1, 9, 6, 4, 2, 6};
 
         int n = 6;
 
@@ -20,23 +20,23 @@ public class ArrayHomework {
                 count++;
             }
         }
-        System.out.println("count of"+ n + ":" + count);
+        System.out.println("count of" + n + ":" + count);
 
-       // Խնդիր 2 — Շրջել զանգվածի էլեմենտների հերթականությունը
+        // Խնդիր 2 — Շրջել զանգվածի էլեմենտների հերթականությունը
 
         int[] num = {1, 5, 8, 3, 9, 2, 7, 4, 6, 10};
 
-        for (int i = 0; i < num.length/2; i++) {
+        for (int i = 0; i < num.length / 2; i++) {
 
             int val = num[i];
 
-            num[i] = num[num.length - 1 - i ];
+            num[i] = num[num.length - 1 - i];
 
             num[num.length - 1 - i] = val;
         }
         for (int i = 0; i < num.length; i++) {
 
-            System.out.print(num[i]+ " ");
+            System.out.print(num[i] + " ");
         }
         System.out.println();
 
@@ -44,7 +44,7 @@ public class ArrayHomework {
 
         int[] number = {3, 6, 8, 3, 9, 6, 2, 3, 5, 6};
 
-        int[] counts = new int [10];
+        int[] counts = new int[10];
 
         for (int i = 0; i < number.length; i++) {
 
@@ -56,9 +56,9 @@ public class ArrayHomework {
 
         for (int i = 0; i < counts.length; i++) {
 
-            if (counts[i]>1) {
+            if (counts[i] > 1) {
 
-                repeatedCount++ ;
+                repeatedCount++;
             }
         }
         System.out.println("Repeated numbers count:" + repeatedCount);
@@ -96,7 +96,7 @@ public class ArrayHomework {
 
         for (int i = 0; i < numbers2.length; i++) {
 
-            if(numbers[i]>max) {
+            if (numbers[i] > max) {
 
                 max = numbers2[i];
             }
@@ -110,7 +110,7 @@ public class ArrayHomework {
                 secondMax = numbers2[i];
             }
         }
-        System.out.println("Second max number:"+ secondMax);
+        System.out.println("Second max number:" + secondMax);
 
         //Bonus 2 — Հեռացնել կրկնվող թվերը
 
@@ -122,7 +122,7 @@ public class ArrayHomework {
 
             for (int j = 0; j < i; j++) {
 
-                if(numbers3[i]==numbers3[j]) {
+                if (numbers3[i] == numbers3[j]) {
 
                     isDuplicate = true;
 
@@ -130,7 +130,7 @@ public class ArrayHomework {
                 }
 
             }
-            if(!isDuplicate) {
+            if (!isDuplicate) {
 
                 System.out.print(numbers3[i] + " ");
             }
@@ -151,12 +151,12 @@ public class ArrayHomework {
 
             for (int j = 0; j < numbers4.length; j++) {
 
-                if(numbers4[i] == numbers4[j]) {
+                if (numbers4[i] == numbers4[j]) {
 
-                     count2++;
+                    count2++;
                 }
             }
-            if(count2 > max2) {
+            if (count2 > max2) {
 
                 max2 = count2;
 
